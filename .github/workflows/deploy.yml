@@ -13,8 +13,8 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  FRONTEND_IMAGE: ghcr.io/${{ github.repository_owner }}/my-portfolio/frontend
-  BACKEND_IMAGE: ghcr.io/${{ github.repository_owner }}/my-portfolio/backend
+  FRONTEND_IMAGE: ghcr.io/${{ github.repository_owner }}/baremetal-k3s-portfolio/frontend
+  BACKEND_IMAGE: ghcr.io/${{ github.repository_owner }}/baremetal-k3s-portfolio/backend
 
 jobs:
   # =============================================================
@@ -104,11 +104,10 @@ jobs:
       - name: Update image tags in values.yaml
         run: |
           # Frontend tag güncelle
-          sed -i 's|repository: ghcr.io/atademirmehmet/my-portfolio/frontend|repository: ghcr.io/atademirmehmet/my-portfolio/frontend|' helm/portfolio/values.yaml
-          sed -i '/repository: ghcr.io\/atademirmehmet\/my-portfolio\/frontend/{n;s/tag: .*/tag: "${{ steps.version.outputs.VERSION }}"/}' helm/portfolio/values.yaml
+          sed -i '/repository: ghcr.io\/atademirmehmet\/baremetal-k3s-portfolio\/frontend/{n;s/tag: .*/tag: "${{ steps.version.outputs.VERSION }}"/}' helm/portfolio/values.yaml
 
           # Backend tag güncelle
-          sed -i '/repository: ghcr.io\/atademirmehmet\/my-portfolio\/backend/{n;s/tag: .*/tag: "${{ steps.version.outputs.VERSION }}"/}' helm/portfolio/values.yaml
+          sed -i '/repository: ghcr.io\/atademirmehmet\/baremetal-k3s-portfolio\/backend/{n;s/tag: .*/tag: "${{ steps.version.outputs.VERSION }}"/}' helm/portfolio/values.yaml
 
       - name: Commit and push
         run: |

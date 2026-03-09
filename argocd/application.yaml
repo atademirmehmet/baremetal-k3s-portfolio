@@ -12,7 +12,7 @@ spec:
 
   # KAYNAK: Nereden deploy edilecek?
   source:
-    repoURL: https://github.com/atademirmehmet/My-Portfolio.git # Git repo URL'i
+    repoURL: https://github.com/atademirmehmet/baremetal-k3s-portfolio.git # Git repo URL'i
     targetRevision: HEAD # Hangi branch/tag (HEAD = en son commit)
     path: helm/portfolio # Repo içinde Helm chart'ın yolu
     helm:
