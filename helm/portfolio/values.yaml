@@ -15,7 +15,7 @@ frontend:
 
   image:
     repository: ghcr.io/atademirmehmet/baremetal-k3s-portfolio/frontend
-    tag: "v1.2.5"
+    tag: "v1.2.6"
     pullPolicy: IfNotPresent
 
   service:
@@ -65,7 +65,7 @@ backend:
 
   image:
     repository: ghcr.io/atademirmehmet/baremetal-k3s-portfolio/backend
-    tag: "v1.2.5"
+    tag: "v1.2.6"
     pullPolicy: IfNotPresent
 
   service:
