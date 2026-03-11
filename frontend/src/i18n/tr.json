@@ -39,16 +39,16 @@
         "label": "// one_cikan_projeler",
         "title": "ls -la ./projeler",
         "realapp": {
-            "name": "Realapp",
-            "type": "Mikroservis Blog",
+            "name": "DevOps Production Architecture",
+            "type": "Mikroservis & Gözlemlenebilirlik",
             "status": "Prodüksiyon",
-            "description": "Frontend (React) ve Backend (Python) olarak ayrılmış full-stack mikroservis mimarisi. Google Cloud Platform üzerinde Kubernetes (K3s) ile orkestre edilmiştir. Kalıcı volume yönetimi ve GitLab üzerinden otomatik CI/CD içerir."
+            "description": "Infrastructure as Code (Terraform & Ansible) kullanılarak cloud sistemler üzerinde provizyon edilen full-stack mikroservis mimarisi. Kubernetes (K3s) ile orkestre edilmiş ve GitLab CI pipeline'ları ile otomatikleştirilmiştir. Kalıcı volume yönetimi ve merkezi loglama ile proaktif izleme için kapsamlı bir gözlemlenebilirlik yığını (Prometheus, Grafana, Loki) içerir."
         },
         "portfolio": {
-            "name": "Portfolio Websitesi",
+            "name": "Bare-Metal K3s Portfolio",
             "type": "GitOps Pipeline",
             "status": "Aktif",
-            "description": "Uçtan uca DevOps pratiklerini sergileyen production-ready CI/CD pipeline. GitHub Actions ile Semantic Versioning kullanarak otomatik build ve deployment. Multi-stage Docker build'ler GHCR'a push edilmektedir. Özel Helm chart'ları ve ArgoCD GitOps sync ile Kubernetes (K3s) orkestrasyonu. Otomatik rollback ve kesintisiz deployment özellikleri içerir."
+            "description": "Bare-metal sunucu üzerinde uçtan uca DevOps pratiklerini sergileyen production-ready CI/CD pipeline. GitHub Actions ile Semantic Versioning kullanarak otomatik build ve deployment. Multi-stage Docker build'ler GHCR'a push edilmektedir. Özel Helm chart'ları ve ArgoCD GitOps sync ile Kubernetes (K3s) orkestrasyonu. Otomatik rollback, güvenli Cloudflare routing ve kesintisiz deployment özellikleri içerir."
         }
     },
     "skills": {

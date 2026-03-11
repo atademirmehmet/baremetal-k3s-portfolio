@@ -39,16 +39,16 @@
         "label": "// featured_projects",
         "title": "ls -la ./projects",
         "realapp": {
-            "name": "Realapp",
-            "type": "Microservices Blog",
+            "name": "DevOps Production Architecture",
+            "type": "Microservices & Observability",
             "status": "Production",
-            "description": "A full-stack microservice architecture split into Frontend (React) and Backend (Python). Orchestrated with Kubernetes (K3s) on Google Cloud Platform. Features persistent volume management and automated CI/CD via GitLab."
+            "description": "A full-stack microservice architecture provisioned on cloud systems using Infrastructure as Code (Terraform & Ansible). Orchestrated with Kubernetes (K3s) and automated via GitLab CI pipelines. Features persistent volume management and a complete observability stack (Prometheus, Grafana, Loki) for centralized logging and proactive monitoring."
         },
         "portfolio": {
-            "name": "Portfolio Website",
+            "name": "Bare-Metal K3s Portfolio",
             "type": "GitOps Pipeline",
             "status": "Active",
-            "description": "Production-ready CI/CD pipeline demonstrating end-to-end DevOps practices. Automated build and deployment via GitHub Actions with Semantic Versioning. Multi-stage Docker builds pushed to GHCR. Kubernetes (K3s) orchestration with custom Helm charts and ArgoCD GitOps sync. Features automated rollback and zero-downtime deployments."
+            "description": "Production-ready CI/CD pipeline demonstrating end-to-end DevOps practices on a bare-metal server. Automated build and deployment via GitHub Actions with Semantic Versioning. Multi-stage Docker builds pushed to GHCR. Kubernetes (K3s) orchestration with custom Helm charts and ArgoCD GitOps sync. Features automated rollback, secure Cloudflare routing, and zero-downtime deployments."
         }
     },
     "skills": {
